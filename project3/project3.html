@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel ="stylesheet" href="stylesheet/style.css" type="text/css" />
+	<meta charset="utf-8">
+	<title>Project3 | Responsive Design and Google Analytics</title>
+</head>
+<body>
+
+<header>
+
+	<h1>Shannon Paton Project 3</h1>
+<!--original attempt at breadcrumbs
+	<ul class="nav">
+		<li><a href="index.html" class="nav-link">Home</a></li>
+		<li><a href="project3.html" class="nav-link">Project 3</a></li>
+	</ul>
+-->
+</header>
+
+	<!--topnav/hamburger menu-->
+	<div class="topnav" id="myTopnav">
+			<a href="../index.html">Home</a>
+			<a href="project3.html" class="active">Project 3</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+	</div>
+
+<main>
+
+<div class="container-grid">
+
+	<div class="grid-template-columns">
+
+	<h2>Responsive Design</h2>
+
+		<p>Responsive design is the practice of implementing HTML, CSS, and JavaScript so that a page is fully legible, attractive, and has a good user experience across all screen sizes (desktop, laptop, tablet, and mobile). <a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp" target="_blank">Media queries</a> can be used to set different styling across various screen sizes by setting styling at specific width breakpoints. You can also use <a href="https://www.w3schools.com/html/html_responsive.asp" target="_blank">percentages and viewports</a> to set responsive styling.</p>
+
+	</div>
+
+	<div class="grid-template-columns">
+
+		<h2>Google Analytics</h2>
+
+		<p>Google Analytics is a widely used, relevant tool that can help digital marketers understand which pages are being viewed on their site and the analytics connected to those views.</p>
+
+		<p>Here are three types of reports that can be useful for your site:</p>
+
+		<p>&nbsp;</p>
+
+		<ol>
+			<li>
+			The <a href="https://www.exactmetrics.com/types-of-google-analytics-reports-to-track-the-best-ones/#audience" target="_blank">Audience Overview Report</a> shows the main metrics of the site, includign total users, total seessions, pageviews, pages per sessions, average visit duration, and bounce rate of the overall site.
+			</li>
+
+			<li>
+			The <a href="https://www.exactmetrics.com/types-of-google-analytics-reports-to-track-the-best-ones/#queries" target="_blank">Queries Report</a> shows the top keywords that users are searching for that lead them to the site, which can be very useful to understand for search engine optimization through keywords on the site.
+			</li>
+
+			<li>
+			Site speed is another important consideration for an optimal website. The <a href="https://www.exactmetrics.com/types-of-google-analytics-reports-to-track-the-best-ones/#speed" target="_blank">Site Speed Report</a> shows the site speed page overview including the average page load time, average redirect time, average server response time, average page download time, and more. In general, it's a good guideline is to keep page load time under 2 seconds.
+			</li>
+		</ol>
+
+	</div>
+
+</div>
+
+	<form>
+         <button type="submit" formaction="preprocessing.html">Learn Preprocessing</button>
+     </form>
+
+
+</main>
+
+
+
+<footer>
+	<p>Copyright Shannon Paton 2021</p>
+
+</footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>

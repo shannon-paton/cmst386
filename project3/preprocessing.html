@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel ="stylesheet" href="stylesheet/style.css" type="text/css" />
+	<meta charset="utf-8">
+	<title>Project 3 | CSS Preprocessing</title>
+</head>
+<body id="top">
+
+<header>
+
+	<h1>Shannon Paton Project 3</h1>
+<!--original attempt at breadcrumbs
+	<ul class="nav">
+		<li><a href="index.html" class="nav-link">Home</a></li>
+		<li><a href="project3.html" class="nav-link">Project 3</a></li>
+	</ul>
+-->
+</header>
+
+	<!--topnav/hamburger menu-->
+	<div class="topnav" id="myTopnav">
+			<a href="../index.html">Home</a>
+			<a href="project3.html">Project 3</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+	</div>
+
+<main>
+
+<div class="container-grid">
+
+	<div class="grid-template-columns">
+
+	<h2>Implementing Preprocessing</h2>
+
+	<p>You can implement CSS preprocessing in a number of different ways, including several languages and processes to create leaner CSS files. You can implement <a href="https://lesscss.org/" target="_blank">Less</a> or <a href="https://sass-lang.com/" target="_blank">Sass</a> by creating a compiler and running the compiler from the command-line (server-side) or you can use <a href="https://codekitapp.com/" target="_blank">CodeKit</a> or another tool (client-side) which will compile Less or Sass code that you’ve written and compile it into a CSS file.</p>
+
+	</div>
+
+	<div>
+	<h2>Mechanisms used in Less</h2>
+
+	<p>Implementing Less is very simple when you already know how to write CSS.  However, using Less can make your CSS more readable and compact. Firstly, you can define variables in Less in order to reuse them. For example, you can declare the color @color-black as #000, meaning that you don’t need to write the hex code for that color in the future, but rather you can call the variable @color-black. Mixins are another useful feature which allow you to include, or “mix in”, multiple properties from one rule-set into another rule-set, meaning that you do not have to declare classes with the same properties more than once. You can also make use of functions, which enables you to define variables by calculating them within the code (for example, setting something to 50% of a width you already have in the code, or lightening a color by a certain percentage or defining a color based on its orientation to another color on the color wheel). Finally, you can use nested variables, allowing you to stack variables for more efficient inputs for the same output.</p>
+
+	<p>For an example of the Less file used in this project, <a href="stylesheet/style.less" target="_blank">click here</a></p>
+
+<!--  How I implemented Less: I used a macOS software called CodeKit to compile my .less files into .css files within my directory called stylesheet. Using this application, I wrote all of the CSS for my files in the .less file, and CodeKit compiles this in a .css file each time I make a change and save the source file. I used Less variables in order to define colors instead of declaring a color each time. I also imported Google Fonts into my Less file by importing the Google Fonts from a URL into a file, and then importing that into the Less file. -->
+
+
+	</div>
+
+
+
+</div>
+
+<p>&nbsp;</p>
+<p><a href="#top">Back to top</a></p>
+
+</main>
+
+<footer>
+	<p>Copyright Shannon Paton 2021</p>
+
+</footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+</body>
+</html>
