@@ -131,7 +131,6 @@ nav a:hover {
 }
 
 main {
-	max-width: auto;
 	position: absolute;
 	height: auto !important;
 	top: 50%;
@@ -251,9 +250,8 @@ main {
 
 /* FORM STYLING */
 form {
-	width: 80%%;
-	font-weight: 1000;
-	padding: 5%;
+	width: 80%;
+	padding: 10px;
 }
 
 fieldset {
@@ -351,10 +349,6 @@ a {
 
 a:hover {
 	color: #005ccc;
-}
-
-.footer-text a {
-	color: 338fff;
 }
 
 #Date {
