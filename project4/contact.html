@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Contact Me | Shannon's Travels</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Traveling on a budget for rewarding experiences.">
+	<meta name="author" content="Shannon Paton">
+	<meta name="copyright" content="Shannon Paton 2021" />
+	<meta name="robots" content="noindex, nofollow">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+	<link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+</head>
+<body onLoad='getDate()' style="text-align: left">
+
+	<header id="contact-header">
+	<nav>
+		<ul>
+			<li class="nav-link"><a href="index.html">Home</a></li>
+			<li class="nav-link"><a href="about.html">About</a></li>
+			<li class="nav-link"><a href="blog.html">Blog</a></li>
+			<li class="nav-link"><a href="resources.html">Resources</a></li>
+		</ul>
+
+	</nav>
+
+			<a href="index.html"><img class="logo" src="images/logo.png"></a>
+			<div class="page-title">
+				<h1>Contact Me</h1>
+			</div>
+		</div>
+
+		<p class="cover-image-credit"><em>Image credit: Shannon Paton All Rights Reserved</em></p>
+
+	</header>
+
+	<main class="flex-container">
+
+		<h2>Reach out to receive communications or to work with me.</h2>
+
+		<form action="mailto:srppaton@gmail.com" enctype="text/plain"
+		method="POST"
+		enctype="multipart/form-data"
+		name="EmailForm">
+
+		<fieldset>
+
+			<legend>Fill out the following fields:</legend>
+
+		    <h4>Name:*</h4><br>
+			 <input type="text" name="Contact-Name" required tabindex="1"><br><br>
+		 
+		    <h4>Email:*</h4><br>
+		    <input type="email" name="Contact-Email" required tabindex="2"><br><br>
+
+		    <h4>Please select your age:</h4><br><br>
+
+			  <input type="radio" id="age1" name="age" value="30" tabindex="3">
+			  	<label for="age1">0 - 30</label><br>
+
+			  <input type="radio" id="age2" name="age" value="60" tabindex="4">
+			 	 <label for="age2">31 - 60</label><br>  
+
+			  <input type="radio" id="age3" name="age" value="100" tabindex="5">
+			  	<label for="age3">61 - 100</label><br><br>
+
+			<h4>What communications are you interested in receiving?</h4>
+
+				<input type="checkbox" id="newsletter" name="newsletter" value="Newsletter" tabindex="6">
+					<label for="newsletter"> Monthly newsletter</label><br>
+
+				<input type="checkbox" id="blog" name="blog" value="Blog" tabindex="7">
+					<label for="blog"> New blog posts</label><br>
+
+				<input type="checkbox" id="offers" name="offers" value="Offers" tabindex="8">
+					<label for="offers"> Special offers and sales</label><br>
+
+		    <h4>Message:</h4><br> 
+		    <textarea name="Contact-Message" rows="10" cols="40" tabindex="9">
+		    </textarea><br><br>
+
+	    	<input type="submit" value="Submit"></input>
+
+	    </fieldset>
+
+	</form>  
+
+		
+
+	</main>
+	
+	<footer>
+
+			<button class="contact-me-button" onclick="window.location.href='contact.html';">
+				Contact me
+			</button>
+
+			<p class="footer-text">Copyright Shannon Paton 2021 | <a href="privacy-policy.html">Privacy Policy</a></p>
+			<p id="Date"></p>
+
+	</footer>
+
+	<script type="text/javascript">
+		function getDate() {
+			var cDate=new Date ();
+			document.getElementById("Date").innerHTML = cDate.toString();
+		}
+	</script>
+
+
+</body>
+</html>
