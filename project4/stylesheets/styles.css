@@ -290,7 +290,6 @@ input[type=submit] {
 	padding: 5px 15px;
 	background: #FFBF1C;
 	cursor: pointer;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   border-top-style: hidden;
   border-right-style: hidden;
