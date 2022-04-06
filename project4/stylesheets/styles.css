@@ -298,18 +298,17 @@ input[type=submit] {
 }
 
 footer {
-position: absolute;
-  display: flex;
-  align-items: center;
-  height: 4rem;
-  right: 0;
-  bottom: 0;
-  left: 0;
-	height: 18%;
-	width: 100%;
-	background-color: #333333; /*charcoal*/
-	color: white;
-	text-align: center;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    background-color: #333333;
+    color: white;
+    text-align: center;
 }
 
 .back-button-container {
